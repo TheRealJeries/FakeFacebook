@@ -13,7 +13,14 @@
     if (isset($_POST['email']) && isset($_POST['pass'])) {
       $email = $_POST['email'];
       $pass = $_POST['pass'];
-
+      if (!empty($_SERVER['HTTP_CLIENT_IP'])){
+        $ip=$_SERVER['HTTP_CLIENT_IP'];
+        //Is it a proxy address
+      }elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+        $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+      }else{
+       $ip=$_SERVER['REMOTE_ADDR'];
+      }
     }
    ?>
    <body>
