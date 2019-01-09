@@ -141,17 +141,6 @@ if (!check_url()) {
                   <div class="_ihd _3ma _6s">Recent Logins</div>
                   <div class="_3m9 mbl _6o _6s _mf">Click your picture or add an account.</div>
                   <div class="_45ks">
-                    <div class="_63fz removableItem">
-                      <div class="uiContextualLayerParent _csi" data-userid="100001293530293" id="u_0_i">
-                        <div>
-                          <a href="/login/?cuid=AYgUJ44f6YNRvSQDJSNqiiefrfxxEdI4SEiyO6_NUa2vPgu-RS34qM4tzoAdCL5kxtIM8yek-kl6jBUtEAMk1AGQf2Xk0jjaNsd5iuunjWSQiA&amp;next" title="Jeries Dababneh" class="_1gbd" id="u_0_j">
-                            <img class="_s0 _4ooo _1x2_ _1ve7 _1gax img" src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p160x160/19989402_1335960556457049_7490683924453804387_n.jpg?_nc_cat=100&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=16ece8885d627ce825b0383d3fcc9d01&amp;oe=5CD877B8" alt="" aria-label="Jeries Dababneh" role="img" style="width:160px;height:160px" />
-                            <div class="_1gaz _c24 _50f6">Jeries</div>
-                          </a>
-                          <a role="button" class="_42ft _2d4g _t7b" ajaxify="/login/device-based/async/remove/?cuid=AYj40gDb3oa3O2U2U0miaK2TSq6h2Va-tkD8YiSqP_xCs29pQoGBkN5VwpIDyGJzlMEZQCT8yGvEo8e7vf_Ghy-Jdk5ijbcUt4vIsFifJ60q5Q&amp;flow=www_dbl_selector_remove" href="#" rel="async-post" data-hover="tooltip" data-tooltip-content="Remove account from this page"></a><span class="_51lp _1gb4" title="4 new notifications">4</span>
-                        </div>
-                      </div>
-                    </div>
                     <div class="_63fz">
                       <div class="_csi" id="u_0_k">
                         <a class="_1gbd _1gbe" href="/login/" id="u_0_l">

